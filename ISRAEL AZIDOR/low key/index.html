@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINGERSTYLE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+        <!-- navbar header -->
+        <div class="nav-header">
+          <div class="nav-brand">
+          </div>
+          <i class="fa fa-bars fa-3x"></i>
+          <div class="header-links">
+            <ul>
+              <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
+              <li data-menuanchor="thirdPage"><a href="#portfolio">PORTFOLIO</a></li>
+              <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- end navbar header -->
+      
+        <!-- sidebar slider -->
+        <div class="nav-screen">
+          <i class="fa fa-times fa-3x"></i>
+          <div class="nav-container">
+            <div class="nav-links">
+              <ul id='myMenu'>
+                <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
+                <li data-menuanchor="thirdPage"><a href="#portfolio">PORTFOLIO</a></li>
+                <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end navbar slider -->
+      
+        <!-- begin fullpage -->
+      
+        <div id="fullpage">
+      
+          <!-- begin section -->
+      
+          <div class="section aboutme" data-anchor="aboutme">
+            <div class="opaque-bg animated fadeInDown">
+              <h1 style="color:white">ISRAEL<span style="color:#FF6363"> | </span>AZIDOR</h1>
+            </div>
+            <i id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
+          </div>
+          <!-- end section -->
+      
+          <!-- begin section -->
+      
+          <div class="section" data-anchor="skills">
+            <div class="content">
+              <h1 class="wow fadeInDown" data-wow-delay="0.2s">ABOUT ME</h1>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">I'm a multi-talented individual with a passion for creativity and technology.
+                <br> With experience in website development, photography, graphic design, and sound, 
+                <br>I strive to create engaging and user-friendly solutions for businesses and individuals alike.
+                <br> I'm always open to new challenges and am constantly learning and expanding my skillset.
+</p>
+      
+              <div class=" wow fadeInUp container-skillbar" data-wow-delay="0.2s">
+                <div class="skillbar clearfix " data-percent="90%">
+                  <div class="skillbar-title" style="background: #DD1E2F;"><span>HTML5</span></div>
+                  <div class="skillbar-bar red" style="background: #DD1E2F; "></div>
+                  <div class="skill-bar-percent">90%</div>
+                </div> <!-- End Skill Bar -->
+      
+                <div class="skillbar clearfix " data-percent="80%">
+                  <div class="skillbar-title" style="background: #EBB035;"><span>CSS3</span></div>
+                  <div class="skillbar-bar yellow" style="background: #EBB035;"></div>
+                  <div class="skill-bar-percent">80%</div>
+                </div> <!-- End Skill Bar -->
+      
+                <div class="skillbar clearfix " data-percent="75%">
+                  <div class="skillbar-title" style="background: #218559;"><span>Photography</span></div>
+                  <div class="skillbar-bar green" style="background: #218559;"></div>
+                  <div class="skill-bar-percent">50%</div>
+                </div> <!-- End Skill Bar -->
+      
+                <div class="skillbar clearfix " data-percent="45%">
+                  <div class="skillbar-title" style="background: #6840D4;"><span>Graphic Design</span></div>
+                  <div class="skillbar-bar voilet" style="background: #6840D4;"></div>
+                  <div class="skill-bar-percent">40%</div>
+                </div> <!-- End Skill Bar -->
+      
+                <div class="skillbar clearfix " data-percent="30%">
+                  <div class="skillbar-title" style="background: #06A2CB;"><span>Sound</span></div>
+                  <div class="skillbar-bar blue" style="background: #06A2CB;"></div>
+                  <div class="skill-bar-percent">30%</div>
+                </div> <!-- End Skill Bar -->
+      
+                <div class="skillbar clearfix " data-percent="20%">
+                  <div class="skillbar-title" style="background: #AB4DD2;"><span>Javascript</span></div>
+                  <div class="skillbar-bar purple" style="background: #AB4DD2;"></div>
+                  <div class="skill-bar-percent">20%</div>
+                </div> <!-- End Skill Bar -->
+              </div>
+            </div>
+          </div>
+          <!-- end section -->
+      
+          <!-- begin section -->
+      
+          <div class="section" data-anchor="projects">
+            <div class="content-slide">
+              <div class="slide">
+                <h1 class="wow fadeInDown" data-wow-delay="0.2s">FINGERSTYLE</h1>
+                <p class="wow fadeInDown" data-wow-delay="0.2s">Digital streaming service</p>
+              </div>
+
+              <div class="slide">
+                <h1>PORTFOLIO</h1>
+                <p>Mockup of a personal portfolio.</p>
+              </div>
+
+              <div class="slide">
+                <h1>NALY'S FASHION HOUSE</h1>
+                <p>Your Home of FASHION.</p>
+              </div>
+
+              <div class="slide">
+                <h1>PERSONAL WEBSITE</h1>
+                <p>Responsive vertical/horizontal header website theme.</p>
+              </div>
+            </div>
+          </div>
+          <!-- end section -->
+      
+          <!-- begin section -->
+      
+          <div class="section" data-anchor="contact">
+            <div class="content wow fadeInDown" data-wow-delay="0.2s">
+              <h1>CONTACT ME</h1>
+              <p>Whether you're interested in working with me or just want to say hello, I'd love to hear from you!</p>
+              <br>
+              <div class="contact-form">
+      
+                <div id="form-messages"></div>
+                <form id="ajax-contact" method="post" role="form" action="contact.php" data-toggle="validator">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="NAME" data-error="Field can't be blank!" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+      
+                  <div class="form-group has-feedback wow fadeInRight" data-wow-delay="0.8s">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" data-error="Field can't be blank!" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+      
+                  <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="1s">
+                    <textarea data-minlength="10" class="form-control" id="message" name="message" placeholder="MESSAGE" data-error="Minimum of 10 characters" required></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+    
+                  <div class="wow fadeInUp" data-wow-delay="1s">
+                    <button type="submit" id="submit" name="submit" class="btn btn-lg">SEND MESSAGE</button>
+                  </div>
+                </form>
+                <br>
+              </div>
+            </div>
+          </div>
+          <!-- end section -->
+      
+          <!-- begin section -->
+              <div class="footer">
+                <div class="about_information-data">
+                  <box-icon name='user-circle'></box-icon>
+                <span>Qwedwo shade</span>
+            </div>
+    
+            <div class="about_information-data">
+              <box-icon name='phone' ></box-icon>
+                <span>0598703642</span>
+        </div>
+        <div class="about_information-data">
+          <box-icon name='envelope'></box-icon>
+        <span>israelshade20@gmail.com</span>
+            </div>
+            </div>
+          </div>
+          <!-- end section -->
+        </div>
+        </div>
+        <!-- end fullpage -->
+      </body>
+</body>
+</html>

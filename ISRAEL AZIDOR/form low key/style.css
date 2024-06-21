@@ -1,0 +1,36 @@
+m*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+
+.login-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: red;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box h2{
+    font-size: 30px;
+    margin-left: 25%;
+    color: white;
+}
+
+.lable{
+
+}
